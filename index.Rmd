@@ -29,9 +29,9 @@ n1$show('inline')
 ## NVD3 Plot Iframe
 
 ```{r nvd3plot2, results = 'asis', comment = NA, message = F, echo = F} 
-# require(rCharts)
-# n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
-# n1
+require(rCharts)
+n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
+n1
 ```
 
 ---

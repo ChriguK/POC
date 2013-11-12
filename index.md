@@ -500,6 +500,9 @@ mode        : selfcontained # {standalone, draft}
 ## NVD3 Plot Iframe
 
 
+```
+Error: object 'opts_current' not found
+```
 
 
 ---
