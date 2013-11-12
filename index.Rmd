@@ -12,7 +12,7 @@ mode        : selfcontained # {standalone, draft}
 ---
 
 ```{r setOptions, echo=FALSE}
-options(gvis.plot.tag="chart")
+# options(gvis.plot.tag="chart")
 # options(rpubs.upload.method = "internal")
 ```
 
