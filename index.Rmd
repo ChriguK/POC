@@ -12,7 +12,7 @@ mode        : selfcontained # {standalone, draft}
 ---
 
 ```{r setOptions, echo=FALSE}
-# options(gvis.plot.tag="chart")
+options(gvis.plot.tag="chart")
 # options(rpubs.upload.method = "internal")
 ```
 
@@ -28,7 +28,7 @@ n1$show('inline')
 
 ## NVD3 Plot Iframe
 
-```{r nvd3plot2, results = 'asis', comment = NA, message = F, echo = F} 
+```{r test, results = 'asis', comment = NA, message = F, echo = F} 
 require(rCharts)
 n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
 n1
@@ -42,4 +42,6 @@ n1
 library(googleVis)
 plot(gvisMotionChart(Fruits, "Fruit", "Year", options=list(width=600, height=400)))
 ```
+
+
 
