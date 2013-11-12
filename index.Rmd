@@ -1,0 +1,45 @@
+---
+title       : MM2014
+subtitle    : Dynamische Datenvisualisierung
+author      : Christian Kamenik
+job         : Projektleiter Verknüpfte Auswertungen
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+ext_widgets : {rCharts: libraries/nvd3}
+mode        : selfcontained # {standalone, draft}
+---
+
+```{r setOptions, echo=FALSE}
+options(gvis.plot.tag="chart")
+# options(rpubs.upload.method = "internal")
+```
+
+## NVD3 Plot Inline
+
+```{r nvd3plot, results = 'asis', comment = NA, message = F, echo = F}
+require(rCharts)
+n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
+n1$show('inline')
+```
+
+---
+
+## NVD3 Plot Iframe
+
+```{r nvd3plot2, results = 'asis', comment = NA, message = F, echo = F} 
+# require(rCharts)
+# n1 <- nPlot(mpg ~ wt, data = mtcars, type = 'scatterChart')
+# n1
+```
+
+---
+
+## Motion chart example
+
+```{r motionchartcode, results='asis'}
+library(googleVis)
+plot(gvisMotionChart(Fruits, "Fruit", "Year", options=list(width=600, height=400)))
+```
+
