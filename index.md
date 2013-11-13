@@ -19,8 +19,6 @@ mode        : selfcontained # {standalone, draft}
 
 
 
----
-
 ## Stand Medienmitteilung 2013
 
 <iframe src="http://www.astra.admin.ch/dokumentation/00109/00113/00491/index.html?lang=de&msg-id=47737" seamless width="400" height="300">
