@@ -8,7 +8,7 @@ biglogo     : Logo_V_ADMAS.png
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
+widgets     : [bootstrap]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 ---
 
@@ -25,17 +25,31 @@ mode        : selfcontained # {standalone, draft}
 
 ---
 
-## Gründe für Führerausweisentzüge im Jahr 2012
+## Stand Business Objects
+
+![alt text](assets/img/Unbenannt-1.png)
+
+---
+
+## Stand Business Objects
+
+![alt text](assets/img/Unbenannt-3.png)
+
+---
+
+## Stand dynamische Datenvisualisierung
+
+#### Gründe für Führerausweisentzüge im Jahr 2012  
 
 <!-- PieChart generated in R 2.15.1 by googleVis 0.4.5 package -->
-<!-- Wed Nov 13 20:49:37 2013 -->
+<!-- Wed Nov 13 22:18:41 2013 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataPieChartID67d75d1fb938 () {
+function gvisDataPieChartID3a82720749a () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -446,19 +460,19 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartPieChartID67d75d1fb938() {
-var data = gvisDataPieChartID67d75d1fb938();
+function drawChartPieChartID3a82720749a() {
+var data = gvisDataPieChartID3a82720749a();
 var options = {};
 options["allowHtml"] = true;
 options["width"] =   1000;
-options["height"] =    500;
+options["height"] =    450;
 options["pieHole"] =    0.4;
 options["pieResidueSliceLabel"] = "Rest";
 options["chartArea"] = {left:0,top:100,width:900,height:300};
 options["legend"] = {position: 'right'};
 
     var chart = new google.visualization.PieChart(
-    document.getElementById('PieChartID67d75d1fb938')
+    document.getElementById('PieChartID3a82720749a')
     );
     chart.draw(data,options);
     
@@ -482,9 +496,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartPieChartID67d75d1fb938);
+callbacks.push(drawChartPieChartID3a82720749a);
 })();
-function displayChartPieChartID67d75d1fb938() {
+function displayChartPieChartID3a82720749a() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -508,25 +522,29 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID67d75d1fb938"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID3a82720749a"></script>
  
 <!-- divChart -->
   
-<div id="PieChartID67d75d1fb938"
-  style="width: 1000px; height: 500px;">
+<div id="PieChartID3a82720749a"
+  style="width: 1000px; height: 450px;">
 </div>
 
 
 ---
 
-## Anzahl der Führerausweisentzüge nach Alter und Jahr
+## Stand dynamische Datenvisualisierung
+
+#### Anzahl der Führerausweisentzüge nach Alter und Jahr
 
 <iframe src=assets/fig/MultiBar.html seamless></iframe>
 
 
 ---
 
-## Massnahmen (Entzüge) gegenüber Motorfahrzeugführern
+## Stand dynamische Datenvisualisierung
+
+#### Massnahmen (Entzüge) gegenüber Motorfahrzeugführern
 
 <!-- LineChart generated in R 2.15.1 by googleVis 0.4.5 package -->
 <!-- Wed Nov 13 21:39:28 2013 -->
@@ -768,4 +786,11 @@ callbacks.shift()();
 <div id="LineChartID3a84608d5a5"
   style="width: 1000px; height: 500px;">
 </div>
+
+
+---
+
+## Stand dynamische Medienmitteilung
+
+[MM2014](http://www.astra.admin.ch/dokumentation/00109/00113/00491/index.html?lang=de&print_style=yes&msg-id=47737)
 

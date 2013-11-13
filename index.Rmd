@@ -8,7 +8,7 @@ biglogo     : Logo_V_ADMAS.png
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
+widgets     : [bootstrap]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 ---
 
@@ -52,19 +52,35 @@ ADMAS <- lapply(ADMAS, function(x) {names(x) <- paste("Y", str_extract(names(x),
 
 ---
 
-## Gründe für Führerausweisentzüge im Jahr 2012
+## Stand Business Objects
+
+![alt text](assets/img/Unbenannt-1.png)
+
+---
+
+## Stand Business Objects
+
+![alt text](assets/img/Unbenannt-3.png)
+
+---
+
+## Stand dynamische Datenvisualisierung
+
+#### Gründe für Führerausweisentzüge im Jahr 2012  
 
 ```{r PieChart, results='asis', echo=FALSE}
 require(googleVis)
 op <- options(gvis.plot.tag = "chart")
 my.data <- ADMAS$Gruende
-pc <- gvisPieChart(my.data, labelvar = "Y.NA", numvar = "Y.2012", options=list(width=1000, height=500, pieHole=0.4, pieResidueSliceLabel="Rest", chartArea="{left:0,top:100,width:900,height:300}", legend="{position: 'right'}"))
+pc <- gvisPieChart(my.data, labelvar = "Y.NA", numvar = "Y.2012", options=list(width=1000, height=450, pieHole=0.4, pieResidueSliceLabel="Rest", chartArea="{left:0,top:100,width:900,height:300}", legend="{position: 'right'}"))
 plot(pc)
 ```
 
 ---
 
-## Anzahl der Führerausweisentzüge nach Alter und Jahr
+## Stand dynamische Datenvisualisierung
+
+#### Anzahl der Führerausweisentzüge nach Alter und Jahr
 
 ```{r MultiBar, results='asis', echo=FALSE, cache=TRUE}
 require(rCharts)
@@ -86,7 +102,9 @@ mb.chart
 
 ---
 
-## Massnahmen (Entzüge) gegenüber Motorfahrzeugführern
+## Stand dynamische Datenvisualisierung
+
+#### Massnahmen (Entzüge) gegenüber Motorfahrzeugführern
 
 ```{r TimeSeriesDimple, results='asis', echo=FALSE}
 require(rCharts)
@@ -105,3 +123,10 @@ Line5 <- gvisLineChart(Massnahmen, xvar="Zeit", yvar=c("Entzug des Lernfahrauswe
 plot(Line5)
 
 ```
+
+---
+
+## Stand dynamische Medienmitteilung
+
+[MM2014](http://www.astra.admin.ch/dokumentation/00109/00113/00491/index.html?lang=de&print_style=yes&msg-id=47737)
+
