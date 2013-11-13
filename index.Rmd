@@ -48,9 +48,7 @@ ADMAS <- lapply(ADMAS, function(x) {names(x) <- paste("Y", str_extract(names(x),
 
 ## Stand Medienmitteilung 2013
 
-<iframe src="http://www.astra.admin.ch/dokumentation/00109/00113/00491/index.html?lang=de&msg-id=47737" seamless width="400" height="300">
-  <p>Your browser does not support iframes.</p>
-</iframe>
+[MM2013](http://www.astra.admin.ch/dokumentation/00109/00113/00491/index.html?lang=de&print_style=yes&msg-id=47737)
 
 ---
 
