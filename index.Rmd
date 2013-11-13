@@ -129,4 +129,3 @@ plot(Line5)
 ## Stand dynamische Medienmitteilung
 
 [MM2014](http://www.astra.admin.ch/dokumentation/00109/00113/00491/index.html?lang=de&print_style=yes&msg-id=47737)
-

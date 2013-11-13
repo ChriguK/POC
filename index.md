@@ -42,14 +42,14 @@ mode        : selfcontained # {standalone, draft}
 #### Gründe für Führerausweisentzüge im Jahr 2012  
 
 <!-- PieChart generated in R 2.15.1 by googleVis 0.4.5 package -->
-<!-- Wed Nov 13 22:18:41 2013 -->
+<!-- Wed Nov 13 22:32:15 2013 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataPieChartID3a82720749a () {
+function gvisDataPieChartID3a84331f4a3 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -460,8 +460,8 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartPieChartID3a82720749a() {
-var data = gvisDataPieChartID3a82720749a();
+function drawChartPieChartID3a84331f4a3() {
+var data = gvisDataPieChartID3a84331f4a3();
 var options = {};
 options["allowHtml"] = true;
 options["width"] =   1000;
@@ -472,7 +472,7 @@ options["chartArea"] = {left:0,top:100,width:900,height:300};
 options["legend"] = {position: 'right'};
 
     var chart = new google.visualization.PieChart(
-    document.getElementById('PieChartID3a82720749a')
+    document.getElementById('PieChartID3a84331f4a3')
     );
     chart.draw(data,options);
     
@@ -496,9 +496,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartPieChartID3a82720749a);
+callbacks.push(drawChartPieChartID3a84331f4a3);
 })();
-function displayChartPieChartID3a82720749a() {
+function displayChartPieChartID3a84331f4a3() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -522,11 +522,11 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID3a82720749a"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartID3a84331f4a3"></script>
  
 <!-- divChart -->
   
-<div id="PieChartID3a82720749a"
+<div id="PieChartID3a84331f4a3"
   style="width: 1000px; height: 450px;">
 </div>
 
@@ -793,4 +793,3 @@ callbacks.shift()();
 ## Stand dynamische Medienmitteilung
 
 [MM2014](http://www.astra.admin.ch/dokumentation/00109/00113/00491/index.html?lang=de&print_style=yes&msg-id=47737)
-
