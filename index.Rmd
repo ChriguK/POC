@@ -46,8 +46,6 @@ ADMAS <- lapply(ADMAS, function(x) {x[,ncol(x)] <- round(x[,ncol(x)]*1.2); retur
 ADMAS <- lapply(ADMAS, function(x) {names(x) <- paste("Y", str_extract(names(x), "[0-9]{4}"), sep="."); return(x)})
 ```
 
----
-
 ## Stand Medienmitteilung 2013
 
 <iframe src="http://www.astra.admin.ch/dokumentation/00109/00113/00491/index.html?lang=de&msg-id=47737" seamless width="400" height="300">
