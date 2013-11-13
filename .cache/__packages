@@ -1,4 +1,10 @@
 base
 googleVis
+knitr
 rCharts
+reshape2
+rJava
 slidify
+stringr
+xlsx
+xlsxjars

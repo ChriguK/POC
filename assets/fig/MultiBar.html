@@ -1,0 +1,368 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://nvd3.org/src/nv.d3.css'>
+    
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
+    <script src='http://nvd3.org/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 400px;
+    }  
+    </style>
+    
+  </head>
+  <body>
+    <div id='chart67d73ec7bc3c' class='rChart nvd3'></div>  
+    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart67d73ec7bc3c()
+    });
+    function drawchart67d73ec7bc3c(){  
+      var opts = {
+ "dom": "chart67d73ec7bc3c",
+"width":    800,
+"height":    400,
+"x": "Zeit",
+"y": "Anzahl",
+"group": "Altersgruppe",
+"type": "multiBarChart",
+"id": "chart67d73ec7bc3c" 
+},
+        data = [
+ {
+ "Zeit":           2006,
+"Altersgruppe": "20 - 24 Jahre",
+"Anzahl":           9535 
+},
+{
+ "Zeit":           2007,
+"Altersgruppe": "20 - 24 Jahre",
+"Anzahl":          13777 
+},
+{
+ "Zeit":           2008,
+"Altersgruppe": "20 - 24 Jahre",
+"Anzahl":          13814 
+},
+{
+ "Zeit":           2009,
+"Altersgruppe": "20 - 24 Jahre",
+"Anzahl":          13416 
+},
+{
+ "Zeit":           2010,
+"Altersgruppe": "20 - 24 Jahre",
+"Anzahl":          13752 
+},
+{
+ "Zeit":           2011,
+"Altersgruppe": "20 - 24 Jahre",
+"Anzahl":          12599 
+},
+{
+ "Zeit":           2012,
+"Altersgruppe": "20 - 24 Jahre",
+"Anzahl":          12515 
+},
+{
+ "Zeit":           2006,
+"Altersgruppe": "25 - 29 Jahre",
+"Anzahl":           6900 
+},
+{
+ "Zeit":           2007,
+"Altersgruppe": "25 - 29 Jahre",
+"Anzahl":           9961 
+},
+{
+ "Zeit":           2008,
+"Altersgruppe": "25 - 29 Jahre",
+"Anzahl":          10283 
+},
+{
+ "Zeit":           2009,
+"Altersgruppe": "25 - 29 Jahre",
+"Anzahl":          10699 
+},
+{
+ "Zeit":           2010,
+"Altersgruppe": "25 - 29 Jahre",
+"Anzahl":          11343 
+},
+{
+ "Zeit":           2011,
+"Altersgruppe": "25 - 29 Jahre",
+"Anzahl":          10933 
+},
+{
+ "Zeit":           2012,
+"Altersgruppe": "25 - 29 Jahre",
+"Anzahl":          10931 
+},
+{
+ "Zeit":           2006,
+"Altersgruppe": "30 - 34 Jahre",
+"Anzahl":           5314 
+},
+{
+ "Zeit":           2007,
+"Altersgruppe": "30 - 34 Jahre",
+"Anzahl":           8015 
+},
+{
+ "Zeit":           2008,
+"Altersgruppe": "30 - 34 Jahre",
+"Anzahl":           8029 
+},
+{
+ "Zeit":           2009,
+"Altersgruppe": "30 - 34 Jahre",
+"Anzahl":           8181 
+},
+{
+ "Zeit":           2010,
+"Altersgruppe": "30 - 34 Jahre",
+"Anzahl":           8478 
+},
+{
+ "Zeit":           2011,
+"Altersgruppe": "30 - 34 Jahre",
+"Anzahl":           8377 
+},
+{
+ "Zeit":           2012,
+"Altersgruppe": "30 - 34 Jahre",
+"Anzahl":           8553 
+},
+{
+ "Zeit":           2006,
+"Altersgruppe": "35 - 39 Jahre",
+"Anzahl":           5110 
+},
+{
+ "Zeit":           2007,
+"Altersgruppe": "35 - 39 Jahre",
+"Anzahl":           7896 
+},
+{
+ "Zeit":           2008,
+"Altersgruppe": "35 - 39 Jahre",
+"Anzahl":           7962 
+},
+{
+ "Zeit":           2009,
+"Altersgruppe": "35 - 39 Jahre",
+"Anzahl":           7821 
+},
+{
+ "Zeit":           2010,
+"Altersgruppe": "35 - 39 Jahre",
+"Anzahl":           8090 
+},
+{
+ "Zeit":           2011,
+"Altersgruppe": "35 - 39 Jahre",
+"Anzahl":           7518 
+},
+{
+ "Zeit":           2012,
+"Altersgruppe": "35 - 39 Jahre",
+"Anzahl":           7523 
+},
+{
+ "Zeit":           2006,
+"Altersgruppe": "40 - 49 Jahre",
+"Anzahl":           8524 
+},
+{
+ "Zeit":           2007,
+"Altersgruppe": "40 - 49 Jahre",
+"Anzahl":          13720 
+},
+{
+ "Zeit":           2008,
+"Altersgruppe": "40 - 49 Jahre",
+"Anzahl":          14109 
+},
+{
+ "Zeit":           2009,
+"Altersgruppe": "40 - 49 Jahre",
+"Anzahl":          15178 
+},
+{
+ "Zeit":           2010,
+"Altersgruppe": "40 - 49 Jahre",
+"Anzahl":          15891 
+},
+{
+ "Zeit":           2011,
+"Altersgruppe": "40 - 49 Jahre",
+"Anzahl":          15552 
+},
+{
+ "Zeit":           2012,
+"Altersgruppe": "40 - 49 Jahre",
+"Anzahl":          15602 
+},
+{
+ "Zeit":           2006,
+"Altersgruppe": "50 - 59 Jahre",
+"Anzahl":           4388 
+},
+{
+ "Zeit":           2007,
+"Altersgruppe": "50 - 59 Jahre",
+"Anzahl":           7443 
+},
+{
+ "Zeit":           2008,
+"Altersgruppe": "50 - 59 Jahre",
+"Anzahl":           8065 
+},
+{
+ "Zeit":           2009,
+"Altersgruppe": "50 - 59 Jahre",
+"Anzahl":           8917 
+},
+{
+ "Zeit":           2010,
+"Altersgruppe": "50 - 59 Jahre",
+"Anzahl":           9519 
+},
+{
+ "Zeit":           2011,
+"Altersgruppe": "50 - 59 Jahre",
+"Anzahl":           9608 
+},
+{
+ "Zeit":           2012,
+"Altersgruppe": "50 - 59 Jahre",
+"Anzahl":          10749 
+},
+{
+ "Zeit":           2006,
+"Altersgruppe": "60 - 69 Jahre",
+"Anzahl":           1634 
+},
+{
+ "Zeit":           2007,
+"Altersgruppe": "60 - 69 Jahre",
+"Anzahl":           3331 
+},
+{
+ "Zeit":           2008,
+"Altersgruppe": "60 - 69 Jahre",
+"Anzahl":           3597 
+},
+{
+ "Zeit":           2009,
+"Altersgruppe": "60 - 69 Jahre",
+"Anzahl":           4142 
+},
+{
+ "Zeit":           2010,
+"Altersgruppe": "60 - 69 Jahre",
+"Anzahl":           4674 
+},
+{
+ "Zeit":           2011,
+"Altersgruppe": "60 - 69 Jahre",
+"Anzahl":           4646 
+},
+{
+ "Zeit":           2012,
+"Altersgruppe": "60 - 69 Jahre",
+"Anzahl":           4947 
+},
+{
+ "Zeit":           2006,
+"Altersgruppe": "70 Jahre und älter",
+"Anzahl":            750 
+},
+{
+ "Zeit":           2007,
+"Altersgruppe": "70 Jahre und älter",
+"Anzahl":           1736 
+},
+{
+ "Zeit":           2008,
+"Altersgruppe": "70 Jahre und älter",
+"Anzahl":           2005 
+},
+{
+ "Zeit":           2009,
+"Altersgruppe": "70 Jahre und älter",
+"Anzahl":           2777 
+},
+{
+ "Zeit":           2010,
+"Altersgruppe": "70 Jahre und älter",
+"Anzahl":           3740 
+},
+{
+ "Zeit":           2011,
+"Altersgruppe": "70 Jahre und älter",
+"Anzahl":           4434 
+},
+{
+ "Zeit":           2012,
+"Altersgruppe": "70 Jahre und älter",
+"Anzahl":           4888 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .x(function(d) { return d[opts.x] })
+          .y(function(d) { return d[opts.y] })
+          .width(opts.width)
+          .height(opts.height)
+         
+        
+          
+        
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+  </body>
+</html>
