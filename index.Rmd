@@ -31,18 +31,18 @@ if (.Platform$OS.type == "windows") {
 
 library(xlsx)
 library(stringr)
-Massnahmen <- read.xlsx("../ADMAS 031_032 v1.0.xls", sheetName="ADMAS 031, 032 - Seite 1", startRow=1, endRow=13, encoding="UTF-8")
-Gruende <- read.xlsx("../ADMAS 031_032 v1.0.xls", sheetName="ADMAS 031, 032 - Seite 1", startRow=15, endRow=27, encoding="UTF-8")
-Dauer <- read.xlsx("../ADMAS 031_032 v1.0.xls", sheetName="ADMAS 031, 032 - Seite 2", startRow=1, endRow=9, encoding="UTF-8")
-Alter <- read.xlsx("../ADMAS 031_032 v1.0.xls", sheetName="ADMAS 031, 032 - Seite 2", startRow=11, endRow=20, encoding="UTF-8")
-Gruende.Verweigerung.Entzug <- read.xlsx("../ADMAS 031_032 v1.0.xls", sheetName="ADMAS 031, 032 - Seite 3", startRow=1, endRow=10, encoding="UTF-8")
-Gruende.Verwarnungen <- read.xlsx("../ADMAS 031_032 v1.0.xls", sheetName="ADMAS 031, 032 - Seite 3", startRow=12, endRow=20, encoding="UTF-8")
+Massnahmen <- read.xlsx("../ADMAS 031-032 v1.0.xls", sheetName="ADMAS 031, 032 - Seite 1", startRow=1, endRow=13, encoding="UTF-8")
+Gruende <- read.xlsx("../ADMAS 031-032 v1.0.xls", sheetName="ADMAS 031, 032 - Seite 1", startRow=15, endRow=27, encoding="UTF-8")
+Dauer <- read.xlsx("../ADMAS 031-032 v1.0.xls", sheetName="ADMAS 031, 032 - Seite 2", startRow=1, endRow=9, encoding="UTF-8")
+Alter <- read.xlsx("../ADMAS 031-032 v1.0.xls", sheetName="ADMAS 031, 032 - Seite 2", startRow=11, endRow=20, encoding="UTF-8")
+Gruende.Verweigerung.Entzug <- read.xlsx("../ADMAS 031-032 v1.0.xls", sheetName="ADMAS 031, 032 - Seite 3", startRow=1, endRow=10, encoding="UTF-8")
+Gruende.Verwarnungen <- read.xlsx("../ADMAS 031-032 v1.0.xls", sheetName="ADMAS 031, 032 - Seite 3", startRow=12, endRow=20, encoding="UTF-8")
 
 ADMAS <- list(Massnahmen=Massnahmen, Gruende=Gruende, Dauer=Dauer, Alter=Alter, Gruende.Verweigerung.Entzug=Gruende.Verweigerung.Entzug, Gruende.Verwarnungen=Gruende.Verwarnungen)
 rm(Massnahmen, Gruende, Dauer, Alter, Gruende.Verweigerung.Entzug, Gruende.Verwarnungen)
 
 ADMAS <- lapply(ADMAS, function(x) x[,-ncol(x)])
-ADMAS <- lapply(ADMAS, function(x) {x[,ncol(x)] <- round(x[,ncol(x)]*1.2); return(x)})
+ADMAS <- lapply(ADMAS, function(x) {x[,ncol(x)] <- round(x[,ncol(x)]*1.1); return(x)})
 ADMAS <- lapply(ADMAS, function(x) {names(x) <- paste("Y", str_extract(names(x), "[0-9]{4}"), sep="."); return(x)})
 ```
 
@@ -71,8 +71,8 @@ ADMAS <- lapply(ADMAS, function(x) {names(x) <- paste("Y", str_extract(names(x),
 ```{r PieChart, results='asis', echo=FALSE}
 require(googleVis)
 op <- options(gvis.plot.tag = "chart")
-my.data <- ADMAS$Gruende
-pc <- gvisPieChart(my.data, labelvar = "Y.NA", numvar = "Y.2012", options=list(width=1000, height=450, pieHole=0.4, pieResidueSliceLabel="Rest", chartArea="{left:0,top:100,width:900,height:300}", legend="{position: 'right'}"))
+my.data <- ADMAS$Gruende[,c(1,28)]
+pc <- gvisPieChart(my.data, labelvar = "Y.NA", numvar = "Y.2012", options=list(width=1000, height=450, pieHole=0.4, pieResidueSliceLabel="Rest", pieSliceText="none", chartArea="{left:0,top:100,width:900,height:300}", legend="{position: 'right'}"))
 plot(pc)
 ```
 
